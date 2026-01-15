@@ -24,7 +24,7 @@ jobs:
           TANDEM_TOKEN_1: ${{ secrets.TANDEM_TOKEN_1 }}
         run: |
           curl -sS -X POST \
-            "https://tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:XAOq7L3pTu6IyuqymvkZcQ/streams/AQAAAE4YLJhb8kGMnAK-ubEBQgoAAAAA" \
+            "https://:-oiW5pEqRu6T7oIR8ifqfg@tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:XAOq7L3pTu6IyuqymvkZcQ/streams/AQAAAE4YLJhb8kGMnAK-ubEBQgoAAAAA" \
             -H "Authorization: Bearer ${TANDEM_TOKEN_1}" \
             -H "Content-Type: application/json" \
             --data-binary @stream.json
@@ -34,7 +34,7 @@ jobs:
           TANDEM_TOKEN_2: ${{ secrets.TANDEM_TOKEN_2 }}
         run: |
           curl -sS -X POST \
-            "https://tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:XAOq7L3pTu6IyuqymvkZcQ/streams/AQAAACelWLX0c0w8nrmeiKAA4UsAAAAA" \
+            "https://:yvbs-PUwSI2ClRDa5fP2sw@tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:XAOq7L3pTu6IyuqymvkZcQ/streams/AQAAACelWLX0c0w8nrmeiKAA4UsAAAAA" \
             -H "Authorization: Bearer ${TANDEM_TOKEN_2}" \
             -H "Content-Type: application/json" \
             --data-binary @stream.json
