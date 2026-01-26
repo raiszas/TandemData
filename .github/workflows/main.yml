@@ -24,8 +24,7 @@ jobs:
           TANDEM_TOKEN_1: ${{ secrets.TANDEM_TOKEN_1 }}
         run: |
           curl -sS -X POST \
-            "https://:7HkGOW86SVyRXGu0a1OjEA@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:mKNB82voSLSwe03_Mvf-KA/streams/AQAAACS13UFqMUqkjbtQqPKGx-UAAAAA" \
-            -H "Content-Type: application/json" \
+            "https://:yvbs-PUwSI2ClRDa5fP2sw@tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:XAOq7L3pTu6IyuqymvkZcQ/streams/AQAAACelWLX0c0w8nrmeiKAA4UsAAAAA" \
             --data-binary @stream.json
 
       - name: Send JSON Data to Second URL
@@ -33,6 +32,5 @@ jobs:
           TANDEM_TOKEN_2: ${{ secrets.TANDEM_TOKEN_2 }}
         run: |
           curl -sS -X POST \
-            "https://:m0yLxRz1QJqUiyZjg_WZMg@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:mKNB82voSLSwe03_Mvf-KA/streams/AQAAANy3QwARHUcFjczxnV6A9EgAAAAA" \
-            -H "Content-Type: application/json" \
+            "https://:-oiW5pEqRu6T7oIR8ifqfg@tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:XAOq7L3pTu6IyuqymvkZcQ/streams/AQAAAE4YLJhb8kGMnAK-ubEBQgoAAAAA" \
             --data-binary @stream.json
