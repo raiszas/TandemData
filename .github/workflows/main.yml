@@ -34,3 +34,11 @@ jobs:
           curl -sS -X POST \
             "https://:m0yLxRz1QJqUiyZjg_WZMg@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:mKNB82voSLSwe03_Mvf-KA/streams/AQAAANy3QwARHUcFjczxnV6A9EgAAAAA" \
             --data-binary @stream.json
+      
+      - name: Send JSON Data to Third URL
+        env:
+          TANDEM_TOKEN_2: ${{ secrets.TANDEM_TOKEN_3 }}
+        run: |
+          curl -sS -X POST \
+            "https://:nG6fVfbGTD-MG9gQ2Tp8Lw@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:mKNB82voSLSwe03_Mvf-KA/streams/AQAAAH03fGr5zUcNosu-rto2e_8AAAAA" \
+            --data-binary @stream.json
